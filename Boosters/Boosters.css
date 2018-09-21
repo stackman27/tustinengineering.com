@@ -1,0 +1,232 @@
+ /* Boosters CSS */
+
+ @font-face 
+{
+    font-family:"Myraid";
+	src: url("fonts/MyraidPro.ttf") format("truetype");
+	 
+}
+
+ @font-face 
+{
+    font-family:"SegoeUI";
+	src: url("fonts/SegoeUI.ttf") format("truetype");
+	 
+}
+
+
+.BoosterInfo {
+	width: 90%;
+    margin-left: auto;
+	margin-right: auto;
+	  background: #fafafa;
+	 overflow: hidden;
+	 
+}
+
+.BoosterInfo  .PicInfo {
+	 
+	padding: 20px 20px;
+	width: 47%;
+    float: left;
+	 
+}
+
+.BoosterInfo .PicInfo img {
+	width: 100%;
+	height: 390px;
+   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .1);	
+}
+
+  .PicInfo ,  .DescInfo p{
+	font-family: SegoeUI;
+	font-size: 17px;
+		line-height: 25px;
+}
+
+
+.BoosterInfo .DescInfo{
+	 
+	width: 50%;
+     float: left;
+	padding:20px 30px;
+}
+
+
+/**** Parent Volunteering and Meeting Begin ***/
+
+.ParentVolunteer {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ParentVolunteer p{
+	font-family: SegoeUI;
+	font-size: 17px;
+		line-height: 25px;
+}
+
+.ParentBoosterMeeting {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ParentBoosterMeeting p{
+	font-family: SegoeUI;
+	font-size: 17px;
+		line-height: 25px;
+}
+
+/*** Parent Volunteering End ***/
+
+/************ Upcoming Boosters Meeting Begin ****/
+
+.UpcomingMeeting {	 
+	overflow: hidden;
+	width:  100%;
+ 
+}
+ 
+ 
+/*********** Upcoming Boosters Meetiing End ****/
+
+
+/******************************************/
+
+  /****** Form and Info*******/
+ .Forms_Info {
+	 width: 23%;
+	  background-color: rgba(242,242,242,0.2); 
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .1);	
+	 float: left;
+	   height:  auto;
+	 position: relative;
+	 overflow: auto;
+	 margin-top:  0px;
+	 margin-left: 6.5%; 
+ 	text-align: center;
+ }
+ 
+ 
+ .Forms_Info section {
+	  width:95%;
+	  margin-left: auto;
+	  margin-right: auto;
+    
+	 margin-top: -10px;
+ }
+ 
+ .Forms_Info section h2{
+	 font-size: 18px;
+	 font-family: 'SegoeUI';
+	  font-weight: 600;
+     height: auto;
+	 border-bottom: 1px solid lightgray;
+ }
+ 
+ .Forms_Info section p {
+	 font-size: 15px;
+	 line-height: 20px;
+	 font-weight: 100;
+    color: red;
+	 
+	 font-family: 'Myraid';
+ }
+  
+  .Forms_Info section ul {
+	  list-style-position: inside;
+	  position: relative;
+	 list-style-type: none;   
+	  margin: 0;
+	  padding:0;
+	  margin-top: -5px;
+  }
+  
+  
+  .Forms_Info section ul li {
+	 font-size: 14px;
+	 line-height: 15px;
+	  
+	 
+  }
+ 
+ .Forms_Info section ul li p{
+	  display:  block;
+	  font-size: 14px;
+	
+	 
+  }
+ 
+  .MeetingInfo {
+	  float: left;
+	  width: 53%;
+    margin-left: 10%;
+  }
+  
+  .MeetingInfo  p{
+	font-family: SegoeUI;
+	font-size: 17px;
+		line-height: 25px;
+}
+
+/***** Booster Officers begin *****/
+.booster_Officer{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.booster_Officer p{
+	font-family: SegoeUI;
+	font-size: 19px;
+	font-weight: 600;
+		line-height: 25px;
+}
+
+.booster_Officer section {
+	display: inline;
+ 
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.booster_Officer section p {
+	display: inline-block;
+	padding: 0 25px;
+	
+}
+
+
+/****** Booster Officers end *******/
+
+     @media only screen and (max-width:960px){ 
+	      .BoosterInfo {
+			  width: 95%;
+			  margin-left: auto;
+			  margin-right: auto;	  
+		  }
+		  
+		.BoosterInfo  .PicInfo {
+	 
+	padding: 10px 10px;
+	width: 47%;
+    float: left;
+	 
+            }
+
+.BoosterInfo .PicInfo img {
+	height: 350px;
+           }
+	 }
+	 
+	      @media only screen and (max-width:800px){ 
+		     
+			 .BoosterInfo {
+			 width: 800px;
+              margin-left: auto;
+              margin-right: auto;			  
+			 }
+		  }

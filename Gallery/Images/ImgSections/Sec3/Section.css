@@ -1,0 +1,114 @@
+/* Section3 CSS */
+
+ 
+	@font-face 
+{
+    font-family:"Myraid";
+    src: url("fonts/myraidPro.ttf") format("truetype");
+ 
+}
+
+
+.Header {
+	width: 100%;
+	height:auto;
+	margin-top: 25px;
+}
+
+.Header section {
+	width: 60%;
+	border-bottom: 1px solid lightgray;
+	height: 50px;
+	margin-left: 15.5%;
+}
+	
+.Header section a, .Header section h2 {
+	float: left;
+	font-family: 'Myraid';
+	font-weight: 100;
+	font-size: 28px;
+}
+
+.images {
+	clear: both;
+	width: 100%;
+	 height: auto;
+	 margin-top: 50px;
+ 
+}
+
+.images section {
+	width: 76%;
+ 
+ margin-left: auto;
+ margin-right: auto;
+ height: auto;
+ overflow: hidden;
+}
+
+.images section .clearing-thumbs li{
+	margin: 10px 20px;
+
+}
+
+.images section .clearing-thumbs li img{
+  width: 300px;
+  height: 175px;
+	background-color: rgba(242,242,242,0.5); 
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .3);
+}
+
+
+@media only screen and (max-width:1024px){
+	.Header section {
+	margin-left: 19%;
+}
+		
+	 .images section {
+		 width: 80%;
+		  
+		 margin-left: 10%;
+	 }
+	 
+	 
+}
+
+@media only screen and (max-width:960px){
+ 
+.images section .clearing-thumbs li{
+	margin: 10px 10px;
+    height: 40%;
+	width: 40%;
+}
+
+
+.images section .clearing-thumbs li img {
+	width: 100%;
+	height: 100%;
+} 
+}
+
+@media only screen and (max-width:450px){
+	
+	.Header section{
+		width: 100%;
+		margin-left: 0px;
+	}
+	
+	.Header section h2 {
+		font-size: 24px;
+		margin-top: 15px;
+	}
+	
+	.images section .clearing-thumbs li img{
+		width:250px;
+		height: 125px;
+	}
+	
+	.images section {
+		margin-left: 2%;
+		width: 100%;
+	}
+	
+	 
+}

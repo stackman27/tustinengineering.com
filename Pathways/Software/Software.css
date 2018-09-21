@@ -1,0 +1,195 @@
+/* Hardware Css */
+
+/* Adding additional font */
+@font-face 
+{
+    font-family:"Myraid";
+    src: url("fonts/myraidPro.ttf") format("truetype");
+ 
+}
+ 
+ 
+   @font-face 
+{
+    font-family:SegoeUI;
+	src: url("fonts/SegoeUI.ttf") format("truetype");
+	 
+}
+ 
+ 
+ 
+ .SoftMenu {
+	 margin-top: 45px;
+	 position: relative;
+	 clear: both;
+	 height: auto;
+ 
+	 width: 100%;
+ }
+ 
+ .SoftMenu section {
+	 width: 70%;
+	 margin-left: 14%;
+	 height: 55px;
+	 border-bottom: 1px solid lightgray;
+	  
+ }
+ 
+ 
+ .SoftMenu section h2 {
+	 font-family: 'Myraid';
+	 font-size: 28px;
+	 font-weight: 100;
+	 float: left;
+ 
+ }
+ 
+ 
+ .SoftMenu section p {
+	 font-family: 'Myraid';
+	 font-size: 17px;
+	 font-weight: 100;
+	 float: right;
+	 margin-top: 27px;
+	 
+ }
+ 
+ .classes {
+	 width:100%;
+	 clear: both;
+  
+   
+ }
+ 
+ .classes section {
+	  width: 40%; 
+	 
+	  display: block;
+	  text-align: center;
+	  margin-left: 29%;
+ }
+ 
+ .classes  section span {
+	 width: 15%;
+	 height: auto;
+ 
+	 display: inline-block;
+	 border-bottom: 1px solid lightgray;
+ }
+ 
+ .classes section span h2{
+	 font-family: SegoeUI;
+	 font-weight: 100;
+	 font-size: 22px;
+	 cursor: pointer;
+ }
+ 
+ #ITEtxt {
+	    color: blue;
+ }
+ 
+ #ITEtxtspan {
+	 border-color: blue;
+ }
+ 
+ #ITE {
+	 display: block;
+ }
+ 
+ 
+ .SoftwareClass {
+	 display: none;
+	 clear: both;
+	 height: auto;
+	 width: 100%;
+	 margin-top: 25px;
+	 text-align: center;
+	  overflow: hidden;
+ }
+ 
+ .SoftwareClass section {
+  width: 60%;
+	  float: right;
+	  margin-right: 2%;
+	   height: auto;  
+	   text-align: center;
+ }
+ 
+ .SoftwareClass section h2 {
+	 font-family: 'Myraid';
+	 font-size: 36px;
+	 font-weight: 100;
+	 line-height: 40px;
+ }
+ 
+ .SoftwareClass section p {
+	 font-family: SegoeUI;
+	 font-size: 20px;
+	 font-weight: 100;
+	 line-height: 30px;
+ }
+ 
+ @media only screen and (max-width:960px){
+	    .classes  section {
+	  
+ }
+ 
+ .classes section span {
+	  width: 20%;
+ }
+ }
+ 
+ @media only screen and (max-width:700px){
+ .SoftwareClass section h2 {
+	 font-size: 32px;
+ }
+ 
+  .classes section {
+	 
+	  width: 50%;
+	  margin-left: 24%;
+  }
+ }
+ 
+ @media only screen and (max-width:500px){
+	 
+	 .SoftMenu section {
+		 height: 35px;
+	 }
+	 
+	 .SoftMenu section p{
+		 display: none;
+	 }
+	 
+	 .SoftMenu section {
+		 text-align: center;
+	 }
+	 
+	 .SoftMenu section h2{
+		 float: none;
+		 
+	 }
+	 
+	 
+	 
+	 .SoftwareClass section {
+	  width: 85%;
+	 margin-left: 6%;
+	   
+ }
+	 
+	  .SoftwareClass section h2 {
+	 font-size: 28px;
+ }
+ 
+  .SoftMenuClass section p{
+	  font-size: 18px;
+  }
+ 
+  .classes section {
+ 
+	  width: 65%;
+	  margin-left: 16%;
+  }
+	 
+ }

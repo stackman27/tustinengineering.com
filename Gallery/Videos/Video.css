@@ -1,0 +1,128 @@
+/* Videos*/
+
+
+.VideoList{
+	 background: #fafafa;
+	 
+ margin-top: 50px;
+  width: 95%;
+  margin-left: 40px;
+overflow: auto;
+height: auto;
+  
+}
+
+.VideoList .videoSection1 h2{
+	font-family: Segoe Ui;
+	font-size: 30px;
+	font-weight: 100;
+}
+
+.videoSection1{
+	margin-top: 15px;
+	margin-left: 45px;
+ 
+	height: auto;
+}
+
+ .videoSection1 iframe {
+	 margin: 5px 22px;
+ }
+ 
+
+.Video{
+	
+    width: 280px;
+	float: left;
+	margin-left:15px;
+ height: 200px;
+	 	background-color: rgba(242,242,242,0.5); 
+
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .3);	
+	text-align: center;
+}
+
+
+
+.videoSection2{
+	margin-top: 50px;
+	margin-left: 45px;
+	background: green;
+}
+
+   .credit .position{
+		width: 100%;
+        margin-top: 10px;
+	}
+	
+	.credit .position .posSec{
+	 width: 70%;
+		 height:  40px;
+		 overflow: hidden;
+		 margin-left: 225px;;
+	}
+	
+	.credit .position .posSec p{
+		font-family: Segoe UI;
+		font-weight: 100;
+	 font-size: 16px;
+	 float: left;
+	 margin-left: 10px;
+	 margin-top: 7px;
+	}
+
+                                 @media only screen and (max-width:1024px) 
+								 {
+									 
+									  .VideoList{
+										 width: 100%;
+										 margin:0;
+										 padding:0;
+									
+									 }
+									 .videoSection1{
+										 text-align: center;
+									 }
+									 
+									 .Video{
+										 margin-top: 50px;
+									 }
+									 
+								 }
+ 
+										 @media only screen and (max-width:960px) 
+								{
+									 .VideoList{
+										 width: 100%;
+										 margin:0;
+										 padding:0;
+									
+									 }
+									 .videoSection1{
+										 text-align: center;
+									 }
+									 
+									 .Video{
+										 width: 45%;
+										 margin-top: 10px;
+									 }
+									 
+									 .Video img{
+										 width: 100%;
+									      
+									 }
+								}
+
+								 @media only screen and (max-width:500px) {
+								
+									 
+									 .Video{
+										 width: 100%;
+										 margin-left: -20px;
+										 float: left;
+									 }
+									 
+									 .Video img{
+										 width: 100%;
+									 }
+								 }

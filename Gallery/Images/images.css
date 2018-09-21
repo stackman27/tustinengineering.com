@@ -1,0 +1,63 @@
+
+@font-face 
+{
+    font-family:"Myraid";
+    src: url("fonts/myraidPro.ttf") format("truetype");
+ 
+}
+
+
+.Imgsections {
+	 margin-top: 55px;
+	 width: 100%;
+	 height: auto;
+ }
+ 
+ .Imgsections section {
+     overflow: hidden;
+	 width:  700px;
+ 
+     height:   auto;
+	  margin-left: auto;
+	  margin-right: auto;
+	 
+ }
+ 
+ .Imgsections section .Img{
+    display: inline-block;
+  margin: 20px 20px;
+	  text-align: center;
+	 width: 43%;
+	  
+	 background-color: rgba(242,242,242,0.5); 
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .3);	
+ }
+ 
+ .Imgsections section .Img h2 {
+	 font-family: 'Myraid';
+	 
+ }
+ 
+ @media only screen and (max-width:1024px){
+	  .Imgsections section {
+		  width: 100%;
+		  margin-left: 13%;
+	  }
+	  
+	   .Imgsections section .Img{
+ 
+	 width: 33%;
+	 	 
+ }
+ }
+ 
+  @media only screen and (max-width:500px){
+	  .Imgsections  section{
+		  width: 100%;
+		  margin-left: 17%;
+	  }
+	  
+	  .Imgsections section .Img{
+		   width: 60%;
+	  }
+  }

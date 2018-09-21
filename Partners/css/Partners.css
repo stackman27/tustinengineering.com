@@ -1,0 +1,148 @@
+/* Partners */
+
+.allHolder {
+	padding-top: 2px;
+	background: #fafafa;
+	width: 95%;
+	overflow: hidden;
+	margin-left: 35px;
+}
+
+
+#sidebar {
+    float: left;
+}
+#sidebar {
+    width: 600px;
+	height: 300px;
+
+}
+#content {
+   width: 600px;
+    display: block;
+    overflow: hidden;
+	
+}
+
+#content h2{
+	font-family: Segoe UI;
+	font-size: 38px;
+	font-weight: 100;
+}
+
+#content p{
+	font-family: Segoe UI;
+	font-weight :  100;
+	font-size: 20px;
+}
+
+
+#container{
+	margin-left: 50px;
+	
+}
+
+#container1 {
+	margin-top: 100px;
+    overflow: hidden;
+    color: black;
+	margin-left: 50px;
+ 
+
+}
+#sidebar1 {
+    float: left;
+    width: 500px;
+	height: 300px;
+
+  margin-left: 80px;
+
+}
+#content1 {
+	float: left;
+   width: 600px;
+    display: block;
+    
+}
+
+#content1 h2{
+	font-family: Segoe UI;
+	font-size: 38px;
+	font-weight: 100;
+}
+
+#content1 p{
+	font-family: Segoe UI;
+	font-weight :  100;
+	font-size: 20px;
+}
+
+	@media only screen and (max-width:960px)
+			{
+								.allHolder {
+									width: 100%;
+									margin: 0;
+									padding:0;
+
+								}	
+								
+								#container1 {
+									width: 100%;
+									margin: 0;
+									padding:0;
+									border-bottom: 1px solid lightgray;
+								}
+								
+						   #container {
+							   border-bottom: 1px solid lightgray;
+							 width: 100%;
+							 float: left;
+							 margin: 0;
+							 padding:0 ;
+						   }
+						
+								#content1 {
+									margin-left: 0px;		
+                                   width: 95%;		
+								   text-align: center;
+						   
+								}
+								
+									#content1 h2{ 
+									line-height: 40px;
+								}
+									
+								#content{
+									margin-left: 0px;	
+                              width: 95%; 									
+                              text-align: center;
+								}
+								
+									#content h2{ 
+									line-height: 40px;
+								}
+						
+								#sidebar{
+									float: left;
+									
+									width: 100%;
+								}
+								
+								#sidebar1{
+									float: left;
+									 margin-left: -3px;
+									width: 100%;
+								}
+								
+								#sidebar1 img {
+									width: 100%;
+									margin:0;
+									padding: 0;
+								}
+								
+									#sidebar img {
+									width: 100%;
+									margin: 0;
+									padding: 0;
+								}
+				}

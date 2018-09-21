@@ -1,0 +1,299 @@
+/* footer */
+
+@font-face 
+{
+    font-family: CalibriLight;
+    src: url("../fonts/CalibriLight.ttf") format("truetype");
+ 
+}
+
+  
+ @font-face 
+{
+    font-family:"SegoeUI";
+	src: url("../fonts/SegoeUI.ttf") format("truetype");
+	 
+}
+
+ 
+
+
+							  /* Mobile Nav site Accordion Begin */
+							  div.MobileAcc {
+								  display: inline;
+							  }
+							  
+							    button.MobileAccordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    font-family: 'SegoeUI';
+}
+
+button.MobileAccordion.active, button.MobileAccordion:hover {
+    background-color: #ddd;
+}
+
+button.MobileAccordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.MobileAccordion.active:after {
+    content: "\2796";
+}
+
+div.options {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.options p{
+ font-family: 'SegoeUI';
+font-size: 16px;
+font-weight: 100;
+}
+
+div.options.show {
+    opacity: 1;
+    max-height: 500px;
+	
+}
+
+	   .bottomMobAcc {
+		  margin-top: -15px;
+	  width: 100%;
+	  text-align: center;
+	  height: auto;
+	  overflow: auto;
+	  background: #eee;
+   }
+   
+   .bottomMobAcc p{
+	   
+	   font-family: CalibriLight;
+	   font-size: 14px;
+ 
+   }
+   
+ 
+       .options a{
+	   font-family: CalibriLight;
+	   font-size: 14px;
+		text-decoration: none;
+		color: black;
+	  }
+	  
+	  .options a:hover{
+		  cursor: pointer;
+		  text-decoration: underline;
+	  }
+   
+
+
+	  
+	  
+								@media only screen and (min-width:960px)
+								{
+									
+									
+									div.MobileAcc {
+									 display : none;	
+									}
+									
+								
+								/* Website Map list Begin */
+			.credit{
+	  height: auto; /* Makes the height responsive */
+	  overflow: hidden; /* Makes the height  responsive */
+        margin-top: 0px;
+		clear: both;
+		 width: 100%;
+       background: #fafafa;
+		 
+	 }
+	 
+	 .credit  .quickLinks{
+        
+		 height: auto;
+		 height: auto; /* Makes the height responsive */
+		 overflow: auto; /* Makes the height responsive */
+		 
+		  
+		  text-align: center;
+	 }
+	 
+	 .credit1{ 
+	  
+	   display: inline-block;
+	   text-align: left;
+	    margin: 0;
+		padding: 0;
+       vertical-align: top;
+	   margin: 0 30px;
+	 }
+ 
+    .credit1 p{
+	   font-family: CalibriLight;
+	   font-size: 14px;
+	    line-height: 10px;
+		text-decoration: none;
+		color: gray;
+	  }
+	 
+	  .credit1 a{
+	   font-family: CalibriLight;
+	   font-size: 14px;
+	    line-height: 10px;
+		text-decoration: none;
+		color:gray;
+	  }
+	  
+	  .credit a:hover{
+		  cursor: pointer;
+		  text-decoration: underline;
+	  }
+
+	  /* Website Map list End */
+	  
+	   
+	 /* Bottom footer  Copyright and otherstuff */
+	   .bottom {
+		   text-align: center;
+	   margin-top:10px;
+	 
+	  width: 100%;  
+	 
+   }
+   
+   .bottom p{
+	   color: black;
+	   font-family: CalibriLight;
+	   font-weight: 100;
+	   font-size: 16px;
+	   display: inline;   
+   }
+    
+   
+    .bottom a{
+	   font-family: CalibriLight;
+	   font-size: 14px;
+	    line-height: 10px;
+		text-decoration: none;
+		color: gray;
+	  }
+	  
+	  .bottom a:hover{
+		  cursor: pointer;
+		  text-decoration: underline;
+	  }
+   
+   
+   .credit .position{
+		width: 100%;
+        margin-top: 10px;
+		 
+	}
+	
+	.credit .position .posSec{
+	     width: 80%;
+	      
+		 height:  40px;
+		 overflow: hidden;
+		 margin-left: 8%;
+		 
+	}
+	
+	.credit .position .posSec p{
+		font-family: 'SegoeUI';
+		font-weight: 100;
+	 font-size: 16px;
+	 float: left;
+	 margin-left: 10px;
+	 margin-top: 7px;
+	}
+	
+   
+   /* Button footer Copyright and other stuff end */
+
+   }
+   /*  ****** NOT NEEDED ****
+             @media screen and (max-width: 1275px) {
+				 
+				 
+           .credit .quickLinks {
+			   width: 85%; 
+			   margin-left: 100px;
+				 	 
+          	}
+			
+			.credit1{
+				margin-left: 25px;
+			}
+			
+	  
+	  	.credit .position .posSec{
+	   
+		 margin-left: 150px;;
+	}
+  }
+  */
+     @media screen and (max-width: 1150px) {
+				 
+		 .credit1{ 
+	  
+	   display: inline-block;
+	   text-align: left;
+	    margin: 0;
+		padding: 0;
+       vertical-align: top;
+	   margin: 0 10px;
+	 }
+	
+  }
+  /* ***8 NOT NEEDED **** 
+   @media screen and (max-width: 1100px) {
+	      .credit .quickLinks {
+			   width: 90%;
+		              margin-left: 50px;
+				 	 
+          	}
+			
+		.credit1{
+				margin-left: 25px;
+			}
+			
+			
+   } 
+  
+   */
+  @media screen and (max-width: 1024px) {
+	   .credit .position .posSec{
+		 margin-left: 5%;
+	}
+	
+	  
+  }  
+  
+   
+								@media only screen and (max-width:960px) 
+								{
+								.credit{
+									display: none;
+								}
+
+								 }

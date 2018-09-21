@@ -1,0 +1,77 @@
+/** in the press **/
+
+@font-face
+{
+  font-family:"Myraid";
+  src: url("fonts/MyraidPro.ttf") format("truetype");
+
+}
+
+@font-face
+{
+  font-family:"SegoeUI";
+  src: url("fonts/SegoeUI.ttf") format("truetype");
+
+}
+
+
+
+#whole {
+  width: 100%;
+  height: auto;
+
+  margin: 0;
+  padding: 0;
+}
+
+#news_covers {
+  width: 1300px;
+
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  height: auto;
+
+
+}
+
+#news_covers #news1 {
+  text-align: center;
+  float: left;
+  height: auto;
+  width: 600px;
+ border: 1px solid #E7E7E7;
+  position: relative;
+
+
+}
+
+#news_covers #news1 img {
+  padding: 10px 25px;
+  width: 72%;
+  height: 275px;
+
+}
+
+#news_covers #news1 p{
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 85%;
+  padding: 0px 20px;
+  font-family: Calibri light;
+  font-size: 1.6rem;
+  font-weight: 100;
+}
+
+#news_covers #news1 p a{
+  text-decoration: none;
+  color: blue;
+}
+
+@media only screen and (max-width:960px) {
+  #news_covers {
+    width: 1300px;
+  }
+
+}

@@ -1,0 +1,145 @@
+/* Staff*/
+
+@font-face 
+{
+    font-family:"Myraid";
+    src: url("fonts/myraidPro.ttf") format("truetype");
+ 
+}
+ 
+  @font-face 
+{
+    font-family:SegoeUI;
+	src: url("fonts/SegoeUI.ttf") format("truetype");
+	 
+}
+
+ 
+ 
+
+.StaffList{
+	 background: #fafafa;
+	overflow: hidden;
+ margin-top: 50px;
+  width: 97%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.Staff1{
+	margin-top: 50px;
+	margin-left: 45px;
+    
+	width: 45%;
+	height: 300px;
+  float: left;
+}
+
+.StaffInfo {
+	 padding-top: 25px;
+  line-height: 30px;
+  float: right;
+  width: 50%;
+}
+
+.StaffImg {
+	float: left;
+	width: 40%;
+	margin-left:  5%;
+	 height: auto;
+	 
+}
+
+.StaffImg img {	 
+	background-color: rgba(242,242,242,0.5); 
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .1);	
+	 width: 90%;
+ height: 250px;
+}
+
+
+
+.StaffInfo h2{
+	 font-family: 'Myraid';
+	 font-size: 26px;
+	 font-weight: 100;
+	 
+}
+
+.StaffInfo p{
+	font-family: SegoeUI;
+	font-size: 20px;
+	font-weight: 100;
+	 line-height: 15px;
+	 
+}
+
+  
+  .credit .position{
+		width: 100%;
+        margin-top: 10px;
+	}
+	
+	.credit .position .posSec{
+	 width: 70%;
+		 height:  40px;
+		 overflow: hidden;
+		 margin-left: 225px;;
+	}
+	
+	.credit .position .posSec p{
+		font-family: SegoeUI;
+		font-weight: 100;
+	 font-size: 16px;
+	 float: left;
+	 margin-left: 10px;
+	 margin-top: 7px;
+	}
+
+ /*** Making Images and List Responsive ** IPAD VIEW **/ 
+
+ @media screen and (max-width: 1024px) { 
+ .Staff1{
+	margin-top: 50px;
+	margin-left: 15px;
+ 
+ width: 47%;
+    }
+	
+	.StaffInfo {
+	 
+	}
+	
+	.StaffImg {
+		margin-left: 0px;
+ 
+	width: 45%;
+	}	
+	.StaffImg  img{
+		width: 100%;
+		margin-left: 0px;
+	}
+ }
+ 
+ @media screen and (max-width: 960px) { 
+  
+     .StaffList {
+		 width: 700px;
+	 }
+      
+      .Staff1{
+	 border-bottom: 1px solid #eee;
+     width:90%;
+	 position: relative;
+	 
+    }
+	
+	.StaffImg  img{
+		width: 70%;
+		margin-left: 50px;
+	}
+	
+ }
+ 
+ 
+ /**** Maing Images and List Responsive ** IPAD VIEW END **/

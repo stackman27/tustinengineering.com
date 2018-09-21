@@ -1,0 +1,50 @@
+/** Femineers.css **/
+.wrapper {
+  width: 1300px;
+  height: auto;
+  overflow: hidden;
+
+  margin: 0 auto;
+}
+
+.cover {
+ width: 85%;
+  margin: 0 auto;
+    background: #fafafa;
+
+}
+
+.gallery {
+  height: 475px;
+  width: 38%;
+  float: right;
+  margin-left: 15px;
+  overflow-y: scroll;
+  text-align: center;
+
+}
+
+.gallery img {
+  height: 275px;
+  width: 275px;
+}
+
+.info {
+  width: 60%;
+  padding: 10px 20px;
+  border-right: 1px solid lightgray;
+  height: auto;
+  overflow: hidden;
+}
+
+.cover p{
+  font-family: Segoe UI;
+  font-size: 16.5px;
+  line-height: 27px;
+  font-weight: 100;
+}
+
+.cover span {
+  font-weight: 400;
+    font-size: 18px;
+}

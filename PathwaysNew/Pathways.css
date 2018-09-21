@@ -1,0 +1,64 @@
+/* Pathways CSS */
+
+@font-face 
+{
+    font-family:"SegoeUI";
+	src: url("fonts/SegoeUI.ttf") format("truetype");
+	 
+}
+
+@font-face 
+{
+    font-family:"Myraid";
+	src: url("fonts/Myraid.ttf") format("truetype");
+	 
+}
+
+.Path_Pic{ 
+  width: 100%; 
+  text-align: center;
+}
+
+.Path_Pic section {
+  margin-top: 75px;
+  width: auto;
+  height: auto;
+  overflow: auto;
+}
+
+.Path_Pic section img{
+	width: 65%;
+}
+
+.Path_text .Path_Title{
+	text-align: center;
+}
+
+.Path_text .Path_Title h2{
+	font-family: 'Myraid';
+	font-weight: 100;
+	font-size: 26px;
+	line-height: 35px;
+}
+
+
+.Path_text .Path_Desc{
+	text-align: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.Path_text .Path_Desc p{
+  font-family: 'SegoeUI';
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 28px;
+}
+
+     @media only screen and (max-width:960px){
+		 .Path_Pic section img {
+			 width: 90%;
+		 }
+		 
+	 }

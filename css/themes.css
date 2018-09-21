@@ -1,0 +1,388 @@
+
+ @font-face 
+{
+    font-family:"SegoeUI";
+	src: url("../fonts/SegoeUI.ttf") format("truetype");
+	 
+}
+
+@font-face 
+{
+    font-family:CalibriLight;
+	src: url("../fonts/CalibriLight.ttf") format("truetype");
+	 
+}
+ 
+ 
+
+#wrapper {
+  float: left;
+  width: 46%; /* Increase or decrease slider width */
+  margin-bottom: 20px;
+   margin-left: 1.5%;
+ 
+   height: 375px;
+  }
+
+ 
+.rslides {
+  margin: 0 auto;
+   height: 360px; /* Increase or decrease slider heigth */
+   
+  }
+
+.rslides_container {
+  
+  position: relative;
+  float: left;
+  width: 100%;
+  }
+
+  
+/*---------- Captions -------------------*/
+.rslides  .caption {
+    padding:20px 40px;
+    margin:auto;
+    left:0;right:0;
+    top:auto;bottom:0px;
+    width:auto;
+   
+ 
+    color:rgba(255,255,255,0.2);
+    background:none;
+    /*background:rgba(0,0,0,0.12);*/
+    position:absolute;
+    box-sizing:border-box;
+}
+
+.rslides li .Boe{
+	      width:  40%; 
+	 text-align: right;
+	  bottom: 60%;
+	 float: right;
+	  margin-right: 0;
+     font-family: CalibriLight;
+	 font-size: 16px;
+	 font-weight: 100;
+	 color: white;
+	 text-decoration: none;
+ } 
+ 
+.rslides li .Boe:hover {
+	 text-decoration: underline;
+ }
+ 
+  
+  .rslides li .ProsArm {
+	  bottom: 0%;
+	 text-align: center;
+	 text-align: left;
+	 line-height: 25px;
+ 
+	 height: auto;
+ }
+ 
+ 
+ .rslides li .ProsArm h2{
+	 font-family: 'SegoeUI';
+	 font-size: 21px;
+	 font-weight: 100;
+	 color: white; 
+	 margin-left: -10px;
+ }
+ 
+ 
+.rslides li .ProsArm p{
+	 font-family: 'SegoeUI';
+	 font-size: 14px;
+	  margin-left: -10px;
+	 width: 50%;
+	 font-weight: 100;
+	 color: white;
+	 margin-top: 5px;
+ }
+ 
+ 
+.rslides li .ProsArm a{
+	 font-family: 'SegoeUI';
+	 font-size: 14px;
+	 width: 50%;
+	 font-weight: 100;
+	 color:  #6262FF;
+	  margin-left: -10px;
+	 text-decoration: none;
+ }
+ 
+ .rslides li .ProsArm a:hover {
+	 text-decoration: underline;
+ }
+  
+  
+   .rslides li .Path {
+	   text-align: center;
+	   top: 1%;
+	 
+ }
+ 
+  .rslides li .Path h2{
+	 margin:0;
+	 padding: 0;
+	  font-family: 'SegoeUI';
+	 font-size: 26px;
+	 font-weight: 100;
+	 color: black;
+ }
+ 
+  .rslides li .hardware {
+	 width: 50%;
+	 text-align: center;
+	 top: 20%;
+	 float: left;
+	 margin-left: 0;
+     font-family: CalibriLight;
+	 font-size: 23px;
+	 font-weight: 100;
+	 color: #6262FF;
+	 text-decoration: none;
+ }
+ 
+ 
+  .rslides li .software{
+	 width: 50%;
+	 text-align: center;
+	 top: 20%;
+	 float: right;
+	  margin-right: 0;
+     font-family: CalibriLight;
+	 font-size: 23px;
+	 font-weight: 100;
+	 color: #6262FF;
+	 text-decoration: none;
+ }
+ 
+  .rslides li .hardware:hover ,  .rslides li .software:hover {
+	 text-decoration: underline;
+ }
+ 
+.rslides li .uCi {
+	   text-align: center;
+	   top: 1%;
+	 
+ }
+ 
+.rslides li .uCi h2{
+	 margin:0;
+	 padding: 0;
+	  font-family: 'SegoeUI';
+	 font-size: 30px;
+	 font-weight: 100;
+	 color: black;
+ }
+ 
+ .rslides li .uCiLM{
+	 width: 50%;
+	 color: #6262FF;
+	 text-align:center;
+	 font-size: 19px;
+	 font-family: CalibriLight;
+	 font-weigth: 100;
+	 bottom: 72%;
+	 text-decoration: none;
+ }
+ 
+ .rslides li .uCiLM:hover {
+	 text-decoration: underline;
+ }
+ 
+ 
+ 
+  
+.centered-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 50%;
+  left: 0;
+  opacity: 0.7;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url("../images/themes.png") no-repeat left top;
+  margin-top: -45px;
+  }
+
+.centered-btns_nav:active {
+  opacity: 1.0;
+  }
+
+.centered-btns_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+  }
+
+.transparent-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  top: 0;
+  left: 0;
+  display: block;
+  background: #fff; /* Fix for IE6-9 */
+  opacity: 0;
+  filter: alpha(opacity=1);
+  width: 48%;
+  text-indent: -9999px;
+  overflow: hidden;
+  height: 91%;
+  }
+
+.transparent-btns_nav.next {
+  left: auto;
+  right: 0;
+  }
+
+.large-btns_nav {
+  z-index: 3;
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  opacity: 0.6;
+  text-indent: -9999px;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background: #000 url("../images/themes.png") no-repeat left 50%;
+  width: 38px;
+  }
+
+.large-btns_nav:active {
+  opacity: 1.0;
+  }
+
+.large-btns_nav.next {
+  left: auto;
+  background-position: right 50%;
+  right: 0;
+  }
+
+.centered-btns_nav:focus,
+.transparent-btns_nav:focus,
+.large-btns_nav:focus {
+  outline: none;
+  }
+
+.centered-btns_tabs,
+.transparent-btns_tabs,
+.large-btns_tabs {
+  margin-top: 10px;
+  text-align: center;
+  }
+
+.centered-btns_tabs li,
+.transparent-btns_tabs li,
+.large-btns_tabs li {
+  display: inline;
+  float: none;
+  _float: left;
+  *float: left;
+  margin-right: 10px;
+  }
+
+.centered-btns_tabs a,
+.transparent-btns_tabs a,
+.large-btns_tabs a {
+  text-indent: -9999px;
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  background: #ccc;
+  background: rgba(0,0,0, .2);
+  display: inline-block;
+  _display: block;
+  *display: block;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  box-shadow: inset 0 0 2px 0 rgba(0,0,0,.3);
+  width: 9px;
+  height: 9px;
+  }
+
+.centered-btns_here a,
+.transparent-btns_here a,
+.large-btns_here a {
+  background: #222;
+  background: rgba(0,0,0, .8);
+  }
+  
+  
+  @media screen and (max-width: 1024px) {
+	  #wrapper {
+ 
+  width: 75%; /* Increase or decrease slider width */
+  margin-bottom: 20px;
+   margin-left: 11%;
+   height: 375px;
+  }
+
+  }
+  
+    @media screen and (max-width:  960px) {
+		#wrapper {
+			margin-top: 75px;
+		}
+	}
+	
+	   @media only screen and (max-width:650px){
+		   #wrapper {
+ 
+  width: 95%; /* Increase or decrease slider width */
+   float: left;
+   margin-left: 15px;
+ 
+   height: 375px;
+       
+	   }
+	   
+	   }
+	   
+	   	   @media only screen and (max-width:450px){ /* Smartphone view */
+			   #wrapper {
+				    height: 270px; /* Increase or decrease slider heigth */
+			   }
+			   
+			   
+.rslides {
+  margin: 0 auto;
+   height: 250px; /* Increase or decrease slider heigth */
+   
+  }
+  
+  .rslides li .uCi h2{
+ 
+	 font-size: 18px;
+ 
+ }
+ 
+ .rslides li .uCiLM{
+	 	 bottom: 65%;
+	 font-size: 14px;
+	 width: 55%;
+ 
+ }
+ 
+ .rslides li .Boe{
+	      width:  60%; 
+	 
+	  bottom: 55%;
+	 float: right;
+	 
+	 font-size: 12px;
+	 
+ } 
+ 
+ 
+		   }

@@ -1,0 +1,95 @@
+/* Top Nav begin */
+/****************************************/
+ 
+
+#Other{
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	height: auto;
+	 
+}
+
+
+#Other section {
+	height : auto;
+	width: 95%;
+	 
+	position: relative; 
+	overflow: auto;
+	margin-left: 35px;
+}
+
+.btn{
+  width: 45%;
+	text-align: center;     
+    background-color: #fafafa;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .3);	
+	display: inline-block;
+	padding: 0px 10px;
+	margin-left: 3%;
+	margin-top: 20px;
+}
+
+
+.btn h2{
+	font-family: Segoe UI;
+	font-weight: 600;
+	font-size: 22px; 
+}
+
+.btn p{
+	 font-family: Calibri light;
+	 font-weight: 100;
+	 font-size: 20px;
+}
+
+
+button.accordion {
+    background-color: #fafafa;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+	font-family: Segoe UI;
+	font-weight: 100;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #fafafa;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;  
+}
+ 
+
+ 
+  

@@ -1,0 +1,242 @@
+/* Intro css */
+
+@font-face 
+{
+    font-family:"SegoeUI";
+	src: url("fonts/SegoeUI.ttf") format("truetype");
+	 
+}
+
+@font-face 
+{
+    font-family:"Myraid";
+	src: url("fonts/Myraid.ttf") format("truetype");
+	 
+}
+
+/*------------------- INtro Image with text  ---------------*/
+ .imageText{
+	 margin-top: 75px;
+	 width: 90%;
+   margin-left: 65px;
+	 
+	 text-align: center;
+    height: auto;
+	overflow: auto;
+	 
+ 
+ }
+ .imageText  img{
+	 
+	 position: relative;
+    height: 200px;
+	width: 36%;
+	 
+ }
+ 
+ .imageText  h2{
+ 
+ margin-top: 40px;
+ width:  100%;
+ 
+ font-family: Times New Roman;
+font-weight: 100;
+ font-size: 32px;
+ line-height: 40px;
+ }
+ 
+ /*  
+ .imageText  p{
+ 
+ width: 80%;
+ margin-left: 125px;
+ font-family: 'SegoeUI';
+ font-size: 18px;
+ font-weight: 100;
+ 
+ }  */
+ 
+ /*------------------------ INtro image with text end ---------------------*/
+  
+  
+ /* History */
+ .txtopt {
+	 width: 96%;
+	 margin-left: 2%;
+	 height: auto;
+	 background: #fafafa;
+	 overflow: auto;
+ }
+ 
+ .txtopt  .secIntro{
+	 text-align: center;
+	  border-right: 1px solid lightgray;
+	 margin-top: 20px;
+	 width: 49%;
+	 float: left;
+ }
+ 
+ .txtopt .secIntro h2 {
+	 font-family: 'Myraid';
+	 font-weight: 100;
+	 font-size: 24px;
+ }
+ 
+ .txtopt .secIntro p{
+	 font-family: 'SegoeUI';
+	 width: 90%;
+	  font-weight: 100;
+	  font-size: 16px;
+	  margin-left: 25px;
+	  line-height: 28px;
+ }
+ 
+ /* History end */
+ 
+ /* classes */
+ 
+ .txtopt .secClass {
+	text-align: center;
+ 
+	 margin-top: 20px;
+	 width: 49%;
+	 float: left;
+ }
+ 
+  .txtopt .secClass h2 {
+	 font-family: 'Myraid';
+	 font-weight: 100;
+	 font-size: 24px;
+ }
+ 
+ .txtopt .secClass p{
+	 font-family: 'SegoeUI';
+	 width: 90%;
+	 color: black;
+	  font-weight: 100;
+	  font-size: 16px;
+	  margin-left: 25px;
+	  line-height: 28px;
+ }
+ 
+ 
+    .class{
+	  width: 95%;
+	  height: auto;
+	 background: #fafafa;
+   padding-top: 10px;
+   padding-bottom: 20px;
+	 margin-left: 5%;
+	  border-bottom: 1px solid lightgray; 
+  }
+  
+  .class h2{
+	  font-family: 'SegoeUI';
+	  font-weight: 600;
+	  
+  }
+  
+  .class p{
+	  font-family: 'SegoeUI';
+	  font-weight: 100;
+	  font-size: 18px;
+	  width: 80%;
+	  margin-left: 10%;
+  }
+  
+  .class p span {
+	  color: red;
+  }
+  
+  .class a{
+	  font-family: 'SegoeUI';
+	  text-decoration: none;
+	  font-size: 18px;
+	  font-weight: 100;
+  }
+  
+  .class a:hover{
+	  text-decoration: underline;
+  }
+  
+  .class button {
+	   border-style: none;
+	 background: transparent;
+  }
+  
+
+  	                           @media only screen and (max-width:1024px){
+								    .imageText h2{
+										  width: 100%;
+										  margin-left: 0px;
+										  line-height: 40px;
+										 
+									 }
+								   
+								   .imageText p{
+										 width: 95%;
+										  margin-left: 15px;
+									 }
+                                   
+								   .imageText img {
+									  width: 45%;
+                                      height: 175px;									  
+								   }
+								   
+                                      .nav .nav-submenu {
+											 margin-left: 0px;
+									}           
+                               
+                                                                      	
+							   }
+  
+  								@media only screen and (max-width:750px){
+									
+									.imageText {
+										width: 100%;
+										margin-left: 0px;
+									}
+									
+									 .imageText img {
+									  width: 70%;
+                                      height: 175px;									  
+								   }
+								   
+								   .txtopt .secIntro {
+									   width: 100%;
+									   border-bottom: 1px solid lightgray;
+									   border-right: none;
+									   }
+								   
+								    .txtopt .secClass{
+									   width: 95%;
+								   }
+								   
+								   
+								}
+								
+								@media only screen and (max-width:500px){
+									
+									.imageText {
+										width: 100%;
+										margin-left: 0px;
+									}
+									
+									 .imageText img {
+									  width: 80%;
+                                      height: 175px;	
+                                       margin-left: 0px;	
+                                     overflow: hidden;									   
+								   }
+								   
+								   
+								     .imageText h2{
+										  margin-left: 0px;
+										  
+										  width: 100%;
+										  font-size: 22px;
+										  line-height: 30px;
+										 overflow: hidden;
+									 }
+								}
+								

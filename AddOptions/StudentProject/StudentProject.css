@@ -1,0 +1,69 @@
+/* Student Project CSS */
+
+ @font-face 
+{
+    font-family:"SegoeUI";
+	src: url("fonts/SegoeUI.ttf") format("truetype");
+	 
+}
+
+ @font-face 
+{
+    font-family:"CalibriLight";
+	src: url("fonts/CalibriLight.ttf") format("truetype");
+	 
+}
+
+ 
+ .stdProj {
+	 height: auto;
+	 width: 90%;
+	 overflow: hidden;
+	 background: #fafafa;
+	 margin-left: auto;
+	 margin-right: auto;
+ }
+ 
+  .link a{
+	font-size: 20px;
+	color: blue;
+	text-decoration: none;
+	margin: 0px 5px;
+}
+
+.link a:hover{
+	text-decoration: underline;
+}
+
+.line {
+	height: 5px;
+	width: 90%;
+	margin-left: 75px;
+	border-bottom: 1px solid lightgray;
+}
+
+       .options a{
+	   font-family: 'CalibriLight';
+	   font-size: 14px;
+		text-decoration: none;
+		color: black;
+	  }
+	  
+	  .options a:hover{
+		  cursor: pointer;
+		  text-decoration: underline;
+	  }
+	  
+ 
+	      @media only screen and (max-width:800px){ 
+		  .stdProj {
+			   width: 800px;
+               margin-left: auto;
+                margin-right: auto;			   
+		  }
+		  
+		  .btn {
+			  	margin-left:  0px;
+		  }
+		  
+		  }

@@ -1,0 +1,529 @@
+
+
+ @font-face 
+{
+    font-family:"SegoeUI";
+	src: url("../fonts/SegoeUI.ttf") format("truetype");
+	 
+}
+
+@font-face 
+{
+    font-family:CalibriLight;
+	src: url("../fonts/CalibriLight.ttf") format("truetype");
+	 
+}
+
+ 
+
+
+/* Computer Slider*/
+#ninja-slider {
+    width:48%;
+	 clear: both;
+ 
+	 overflow: hidden;
+	 float:  left;
+ 
+	 margin-left: 27%;
+	 box-sizing: border-box;
+	 padding: 5px 10px;
+}
+
+#ninja-slider .slider-inner {
+    max-width: 100%;
+	max-height: 57%;
+  
+  
+    
+    margin:0 auto;/*center-aligned */
+    font-size:0px;
+    position:relative;
+    box-sizing:border-box;
+ 
+	overflow: hidden;
+}
+
+#ninja-slider.fullscreen .slider-inner {
+    width:95%;
+    max-width:800px;
+	  
+}
+
+#ninja-slider ul {
+    position:relative;
+    list-style:none;
+    padding:0;
+    box-sizing:border-box;
+	height: auto;
+	overflow: auto;
+}
+
+#ninja-slider li {
+    
+		background-color: rgba(242,242,242,0.5); 
+
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .3);	
+     width:100%;
+    height:85%;
+    top:0;
+    left:0;
+    position: absolute;
+    font-size:12px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    opacity:0;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+#ninja-slider li.ns-show {
+    opacity:1;
+}
+
+
+
+/* --------- slider image ------- */  
+#ninja-slider .ns-img {
+    background-color:rgba(0,0,0,0.3);
+    background-size:contain;/*Note: If transitionType is zoom, it will be overridden to cover.*/
+
+    cursor:default;
+    display:block;
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+
+/*---------- Captions -------------------*/
+#ninja-slider .caption {
+    padding:20px 40px;
+    margin:auto;
+    left:0;right:0;
+    top:auto;bottom:0px;
+    width:auto;
+   
+ 
+    color:rgba(255,255,255,0.2);
+    background:none;
+    /*background:rgba(0,0,0,0.12);*/
+    position:absolute;
+    box-sizing:border-box;
+}
+
+ #ninja-slider li .ProsArm {
+	  bottom: 0%;
+	 text-align: center;
+	 text-align: left;
+	 line-height: 25px;
+ 
+	 height: auto;
+ }
+ 
+ 
+ #ninja-slider li .ProsArm h2{
+	 font-family: 'SegoeUI';
+	 font-size: 26px;
+	 font-weight: 100;
+	 color: white;
+ }
+ 
+ 
+ #ninja-slider li .ProsArm p{
+	 font-family: 'SegoeUI';
+	 font-size: 18px;
+	 width: 50%;
+	 font-weight: 100;
+	 color: white;
+	 margin-top: -10px;
+ }
+ 
+ 
+ #ninja-slider li .ProsArm a{
+	 font-family: 'SegoeUI';
+	 font-size: 15px;
+	 width: 50%;
+	 font-weight: 100;
+	 color:  #6262FF;
+	 text-decoration: none;
+ }
+ 
+ #ninja-slider li .ProsArm a:hover {
+	 text-decoration: underline;
+ }
+ 
+ #ninja-slider li .Path {
+	   text-align: center;
+	   top: 1%;
+	 
+ }
+ 
+ #ninja-slider li .Path h2{
+	 margin:0;
+	 padding: 0;
+	  font-family: 'SegoeUI';
+	 font-size: 26px;
+	 font-weight: 100;
+	 color: black;
+ }
+ 
+ #ninja-slider li .hardware {
+	 width: 50%;
+	 text-align: center;
+	 top: 20%;
+	 float: left;
+	 margin-left: 0;
+     font-family: CalibriLight;
+	 font-size: 26px;
+	 font-weight: 100;
+	 color: #6262FF;
+	 text-decoration: none;
+ }
+ 
+ 
+ #ninja-slider li .software{
+	 width: 50%;
+	 text-align: center;
+	 top: 20%;
+	 float: right;
+	  margin-right: 0;
+     font-family: CalibriLight;
+	 font-size: 26px;
+	 font-weight: 100;
+	 color: #6262FF;
+	 text-decoration: none;
+ }
+ 
+ #ninja-slider li .hardware:hover , #ninja-slider li .software:hover {
+	 text-decoration: underline;
+ }
+ 
+ #ninja-slider li .Boe{
+	      width:  40%; 
+	 text-align: right;
+	  bottom: 62%;
+	 float: right;
+	  margin-right: 0;
+     font-family: CalibriLight;
+	 font-size: 20px;
+	 font-weight: 100;
+	 color: white;
+	 text-decoration: none;
+ } 
+ 
+ #ninja-slider li .Boe:hover {
+	 text-decoration: underline;
+ }
+ 
+ 
+ #ninja-slider li .uCi {
+	   text-align: center;
+	   top: 1%;
+	 
+ }
+ 
+ #ninja-slider li .uCi h2{
+	 margin:0;
+	 padding: 0;
+	  font-family: 'SegoeUI';
+	 font-size: 34px;
+	 font-weight: 100;
+	 color: black;
+ }
+ 
+ #ninja-slider li .uCiLM{
+	 width: 50%;
+	 color: #6262FF;
+	 text-align:center;
+	 font-size: 21px;
+	 font-family: CalibriLight;
+	 font-weigth: 100;
+	 bottom: 75%;
+	 text-decoration: none;
+ }
+ 
+ #ninja-slider li .uCiLM:hover {
+	 text-decoration: underline;
+ }
+ 
+ 
+ 
+/* ---------Arrow buttons ------- */   
+/* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */ 
+#ninja-slider-pause-play { display:none;}  
+
+#ninja-slider-prev, #ninja-slider-next
+{
+    position: absolute;
+    display:inline-block;
+    width:42px;
+    height:56px;
+    line-height:56px;
+    top: 50%;
+    margin-top:-51px;/*pager's height should also be counted*/
+    background-color:rgba(0,0,0,0.4);
+    background-color:#ccc\9;/*IE8 hack*/
+    backface-visibility:hidden;
+    color:white;
+    overflow:hidden;
+    white-space:nowrap;
+    -webkit-user-select: none;
+    user-select:none;
+    border-radius:2px;
+    z-index:10;
+    opacity:0.3; 
+    font-family:sans-serif;   
+    font-size:13px;
+    cursor:pointer;
+    -webkit-transition:all 0.7s;
+    transition:all 0.7s;
+}
+
+.slider-inner:hover #ninja-slider-prev, .slider-inner:hover #ninja-slider-next {
+    opacity:1;
+}
+
+
+#ninja-slider-prev {
+    left: 0px; /*set it with a positive value if .slider-inner does not have max-width setting.*/
+}
+#ninja-slider-next {
+    right: 0px;
+}
+
+/* arrows */
+#ninja-slider-prev::before, #ninja-slider-next::before {
+    position: absolute;
+    top: 17px;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    backface-visibility:hidden;
+}
+
+#ninja-slider-prev::before {
+    -ms-transform:rotate(-45deg);/*IE 9*/
+    -webkit-transform:rotate(-45deg);
+    transform: rotate(-45deg);
+    right:4px;
+}
+
+#ninja-slider-next::before {
+    -ms-transform:rotate(135deg);/*IE 9*/
+    -webkit-transform:rotate(135deg);
+    transform: rotate(135deg);
+    left:4px;
+}
+
+
+/*pagination num within the arrow buttons*/
+#ninja-slider-prev div, #ninja-slider-next div {display:none;}
+
+
+
+   /* Computer Slider End */
+   
+   
+   /* Mobile Slider Begin*/
+/*Responsive settings*/
+ 
+ 
+  
+   
+   
+  @media screen and (max-width: 1024px) {
+	   
+	   #ninja-slider{
+ margin-left: 0%;
+		    width: 100%;
+	   }
+	   
+	   #ninja-slider .slider-inner {
+		   max-width: 100%;
+		   max-height: 87%;
+	 
+	   }
+  }
+  
+  @media only screen and (max-width:960px){
+	  
+	  #ninja-slider {
+		  margin-top: 78px;
+	  }
+	  
+	      #ninja-slider .slider-inner {
+		   max-height: 80%;
+	   }
+	  
+  }
+ 
+ @media only screen and (max-width:900px){
+   #ninja-slider .slider-inner {
+		   max-height: 75%;
+	   }
+       
+   }
+ 
+ 
+  @media only screen and (max-width:825px){
+   #ninja-slider .slider-inner {
+		   max-height: 70%;
+	   }
+    
+
+	#ninja-slider li .uCi{
+		font-size: 26px;
+	}
+	
+ #ninja-slider li .uCiLM{
+	 font-size: 20px;
+	 bottom: 75%;
+	  
+ }
+ 
+	   
+   }
+   
+     @media only screen and (max-width:768px){
+	 
+   #ninja-slider .slider-inner {
+		   max-height: 63%;
+	   }
+       
+   }
+   
+    @media only screen and (max-width:700px){
+   #ninja-slider .slider-inner {
+		   max-height: 58%;
+	   }
+	       
+	 #ninja-slider li .ProsArm h2  {
+		 font-size: 22px;
+	 }
+	 
+	  #ninja-slider li .ProsArm p{
+		  font-size: 16px;
+		  
+	  }
+       
+	   #ninja-slider li .Path  h2{
+		   font-size: 24px;
+	   }
+	   
+	   #ninja-slider li .hardware , #ninja-slider li .software {
+		   font-size: 20px;
+	   }
+	   
+	   #ninja-slider li .Boe{
+		   font-size: 18px; 
+		   bottom: 55%;
+		   
+	   }
+	   
+	   
+	#ninja-slider li .uCi{
+		bottom: 75%;
+	}
+	
+	#ninja-slider li .uCi h2{
+			margin: 0;
+		padding: 0;	
+		font-size: 22px;
+	}
+ #ninja-slider li .uCiLM{
+	 font-size: 18px;
+	 bottom: 72%;
+	  
+ }
+ 
+	   
+   }
+   
+       @media only screen and (max-width:625px){
+		      #ninja-slider .slider-inner {
+		   max-height: 51%;
+	   }
+	   
+	    #ninja-slider li .ProsArm h2  {
+		 font-size: 20px;
+       
+	 }
+	 
+	  #ninja-slider li .ProsArm p{
+		  display: none;  
+	  }
+ 
+    #ninja-slider li .Boe{
+		   font-size: 16px;
+		   width: 60%;
+		  
+		  
+	   }
+	   
+	         
+	#ninja-slider li .uCi{
+		bottom: 75%;
+			margin: 0;
+		padding: 0;	
+	}
+	
+	#ninja-slider li .uCi h2{
+			 
+		font-size: 20px;
+	}
+ #ninja-slider li .uCiLM{
+	 font-size: 18px;
+	 bottom: 70%;
+	 width: 60%;
+	  
+ }
+	 
+	   
+	   	  #ninja-slider-prev, #ninja-slider-next, #ninja-slider-pager {
+        display:none;
+    }
+	
+	
+	 }
+	 
+	 
+	         @media only screen and (max-width:575px){
+		 
+		   #ninja-slider .slider-inner {
+		   max-height: 47%;
+	      }
+	 
+	   }
+	   
+	    @media only screen and (max-width:550px){
+					 
+		 
+			    #ninja-slider .slider-inner {
+		   max-height: 40%;
+	      }
+			
+			#ninja-slider li .uCiLM{
+	 bottom: 66%;
+        }
+		
+		    #ninja-slider li .ProsArm {
+				margin-left: -25px;
+			}
+			
+			  #ninja-slider li .hardware , #ninja-slider li .software {
+		   font-size: 17px;
+	   }
+	   
+	       #ninja-slider li .Boe{
+				font-size: 14px;
+	        }	 
+		}
+		
+		  

@@ -1,0 +1,98 @@
+ 			
+@font-face 
+{
+    font-family:"SegoeUI";
+	src: url("fonts/SegoeUI.ttf") format("truetype");
+	 
+}
+
+				
+				
+		.AllPartners {
+			width: 100%;
+			height: auto;
+			overflow: auto;
+			margin-top: 60px;
+			 
+		}
+				
+				.AllPartners section {
+					 margin-left: auto;
+					 margin-right: auto;
+					 margin-top: 10px;
+				  width: 90%;
+					 display: inline block;
+			 
+				}
+				
+			.btn{
+  width: 350px;
+ 
+	text-align: center; 
+   margin:  20px 20px;
+   border-bottom : 1px solid lightgray;
+	display: inline-block;
+}
+
+
+.btn h2{
+	font-family: SegoeUI;
+	font-weight: 200;
+	font-size: 22px; 
+}
+
+.btn img {
+	width: 80%;
+	height: 70%;
+}
+
+ 
+
+
+button.accordion {
+    background-color:  white;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+	font-family: SegoeUI;
+	font-weight: 100;
+}
+ 
+ .accordion a{
+    text-decoration: none;
+	color: black;
+}
+ 
+  .accordion a:hover{
+     text-decoration: underline;
+}
+ 
+
+	@media only screen and (max-width:960px) /* Desltop Footer */
+	{		
+		 .AllPartners {
+			 overflow: hidden;
+			 width: 100%;
+			 margin: 0;
+			 padding: 0;
+			 text-align: center;
+		 }
+		 
+		 .AllPartners section 
+		 { 
+			 overflow: hidden;
+           width: 100%;
+			margin:0;
+            padding: 0;			
+		 }
+		 
+		 .btn {
+			 border-bottom: 1px solid lightgray;
+		 }
+	}

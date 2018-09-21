@@ -1,0 +1,328 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face
+{
+   font-family:"SegoeUI";
+ src: url("fonts/SegoeUI.ttf") format("truetype");
+}
+
+@font-face
+{
+   font-family:"Myraid";
+ src: url("fonts/MyraidPro.ttf") format("truetype");
+
+}
+
+body{
+ margin: 0;
+ padding: 0;
+ overflow-x: hidden;
+}
+
+.TTechTitle {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: auto;
+  text-align: center;
+  background: #fafafa;
+  vertical-align: bottom;
+}
+
+.TTechTitle .tt{
+  color: black;
+  padding-top: 10px;
+  font-family:  Times New Roman;
+  font-size: 25px;
+  font-weight: 100;
+  display: block;
+}
+
+
+/****** Form and Info*******/
+.Forms_Info {
+  width: 20%;
+  float: left;
+  height: 360px;
+  position: relative;
+  overflow: auto;
+  margin-top:  0px;
+  margin-left: 5.5%;
+  background-color: rgba(242,242,242,0.5);
+}
+
+
+.Forms_Info section {
+   width: 90%;
+   margin-left: 5px;
+   margin-top: -10px;
+}
+
+/** styling the scroller for latest news begin ****/
+.Forms_Info::-webkit-scrollbar {
+   width:8px;
+}
+
+.Forms_Info::-webkit-scrollbar-track {
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+   border-radius: 10px;
+}
+
+.Forms_Info::-webkit-scrollbar-thumb {
+   border-radius: 10px;
+   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+}
+
+
+/** styling the sroller for latest news end ***/
+.Forms_Info section h2{
+  font-size: 20px;
+  font-family: 'SegoeUI';
+  height: 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.Forms_Info section p {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  font-family: 'SegoeUI';
+}
+
+ .Forms_Info section ul {
+   list-style-position: inside;
+   position: relative;
+   list-style-type: none;
+   margin: 0;
+   padding:0;
+   margin-top: -5px;
+ }
+
+
+ .Forms_Info section ul li {
+  font-size: 14px;
+  line-height: 15px;
+ }
+
+.Forms_Info section ul li p{
+   display:  block;
+   font-size: 14px;
+ }
+
+.Forms_Info section ul li a{
+   font-family:'SegoeUI';
+   color: light blue;
+   font-size: 13px;
+   width: 100%;
+  text-decoration: none;
+  display: inline-block;
+}
+
+ .Forms_Info section ul li a:hover{
+  text-decoration: underline;
+}
+
+.Forms_Info section ul li span {
+  text-decoration: none;
+}
+
+/****** Form and Info end *******/
+/* Text above button Begin */
+.Context{
+   clear: both;
+   width: 100%;
+   height: auto;
+   text-align: center;
+   overflow: hidden;
+ }
+
+ .Context section {
+   width: 80%;
+   margin-left: 10%;
+ }
+
+ .Context h2{
+   font-family: 'SegoeUI';
+   font-size: 18px;
+   font-weight: 100;
+ }
+
+   /* Text above button End */
+   /* buttons to navigate  begin */
+     .buttons{
+     width: 100%;
+     height: auto;
+     overflow: hidden;
+     clear: both;
+   }
+
+   .buttons  section{
+          width: 99%;
+
+      overflow: hidden;
+      height: auto;
+      text-align: center;
+      padding: 0;
+      position: relative;
+   }
+
+   .buttons section button{
+     background: -webkit-linear-gradient(top,#fafafa, #eee); /* For Safari 5.1 to 6.0 */
+   background: -o-linear-gradient(bottom,#fafafa, #eee); /* For Opera 11.1 to 12.0 */
+   background: -moz-linear-gradient(bottom, #fafafa, #eee); /* For Firefox 3.6 to 15 */
+   background: linear-gradient(to bottom,#fafafa, #eee); /* Standard syntax (must be last) */
+     border: none;
+     height: auto;
+     width: 22%;
+     text-align: center;
+   }
+
+   .buttons section button img{
+     width:  100%;
+     heigth:   auto;
+   }
+
+   .buttons section .bng{
+     margin-left: 20px;
+     background: url(images/boeing1a.png);
+   }
+
+
+ /* Buttons to navigate End */
+   @media screen and (max-width: 1100px) {
+     .Forms_Info{
+        margin-left:2%;
+        width: 23%;
+     }
+
+    .invisible {
+      display:  none;
+    }
+}
+
+
+
+
+ @media screen and (max-width: 1024px) {
+  .Forms_Info {
+      width: 42%;
+      position:  absolute;
+      float:  left;
+      margin-top: 395px;
+      height: 360px;
+
+    }
+
+    .invisible {
+      display: block;
+    }
+ }
+
+
+ /* Mobile display  settings Begin */
+@media only screen and (max-width:960px){
+
+  .TTechTitle {
+  display: none;
+}
+
+
+  .test ul{
+    width: 100%;
+  }
+
+   .test li{
+      text-align: center;
+      display: inline-block;
+      width: 100%;
+      height: 240px;
+      background: rgba(0,0,0,0.05);
+   }
+
+
+
+   .SliderFeed{
+   width: 100%;
+   clear: both;
+   height: 800px;
+ }
+
+      header a img{
+      display: none;
+      }
+
+    .Forms_Info{
+      margin-top: 470px;
+    }
+}
+
+@media only screen and (max-width:850px){
+  .buttons {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .buttons section{
+    width: 100%;
+    margin-left: 0;
+    height: auto;
+    overflow: hidden;
+  }
+
+ .buttons section button{
+   width: 49%;
+   height: auto;
+   overflow: hidden;
+ }
+
+ .buttons section .bng{
+   margin-left: 5px;
+ }
+
+   .buttons section .Achie{
+   margin-left: 5px;
+  }
+}
+
+   @media only screen and (max-width:700px){
+           .Context{
+            overflow: hidden;
+            margin-left: 0px;
+      }
+   }
+
+   @media only screen and (max-width:600px){
+        .buttons section{
+          width: 100%;
+      overflow: hidden;
+  }
+
+ .buttons section button {
+   width: 100%;
+   margin: 10px 0;
+   margin-left: 0px;
+   text-align: center;
+      overflow: hidden;
+ }
+
+ .buttons section button img{
+   width: 70%;
+      overflow: hidden;
+ }
+
+       .Context{
+      clear: both;
+      overflow: hidden;
+   }
+ }
+
+     @media only screen and (max-width:500px){
+        .Context{
+
+          overflow: hidden;
+    }
+   }
+/* Mobile display setting end */

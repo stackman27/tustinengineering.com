@@ -1,0 +1,7 @@
+DirectoryIndex Homepage.php
+
+
+RewriteCond %{HTTP_COOKIE} !^mobile=no$ 
+RewriteCond %{HTTP_HOST} !^m\.stage\.sunjournal\.com$ 
+RewriteCond %{HTTP_USER_AGENT} "android|iPhone|blackberry|iemobile|operamobile|palmos|webos|googlebot-mobile" [NC] 
+RewriteRule ^(.*)$ http://m.stage.sunjournal.com/$1 [L,R=302]

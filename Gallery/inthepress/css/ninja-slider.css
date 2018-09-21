@@ -1,0 +1,323 @@
+
+/* Computer Slider*/
+#ninja-slider {
+    width:67%;
+ 
+	 overflow: hidden;
+     
+    box-sizing:border-box;
+ 
+    margin-left: 220px;
+  
+}
+#ninja-slider .slider-inner {
+    max-width:97%;
+   
+     padding:0;
+    margin:0 auto;/*center-aligned */
+    font-size:0px;
+    position:relative;
+    box-sizing:border-box;
+		height: auto;
+	overflow: auto;
+}
+
+#ninja-slider.fullscreen .slider-inner {
+    width:95%;
+    max-width:800px;
+}
+
+#ninja-slider ul {
+    position:relative;
+    list-style:none;
+    padding:0;
+    box-sizing:border-box;
+	height: auto;
+	overflow: auto;
+}
+
+#ninja-slider li {
+    
+		background-color: rgba(242,242,242,0.5); 
+
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .3);	
+    width:100%;
+    height:90%;
+    top:0;
+    left:0;
+    position: absolute;
+    font-size:12px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    opacity:0;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+#ninja-slider li.ns-show {
+    opacity:1;
+}
+
+
+
+/* --------- slider image ------- */  
+#ninja-slider .ns-img {
+    background-color:rgba(0,0,0,0.3);
+    background-size:contain;/*Note: If transitionType is zoom, it will be overridden to cover.*/
+
+
+ 
+
+    cursor:default;
+    display:block;
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+
+/*---------- Captions -------------------*/
+#ninja-slider .caption {
+    padding:20px 40px;
+    margin:auto;
+    left:0;right:0;
+    top:auto;bottom:0px;
+    width:auto;
+    text-align:right;
+    font-family:sans-serif;
+    font-size:11px;
+    color:rgba(255,255,255,0.2);
+    background:none;
+    /*background:rgba(0,0,0,0.12);*/
+    position:absolute;
+    box-sizing:border-box;
+}
+#ninja-slider li .cap1 {
+  color: white;
+    font-family: Segoe UI;
+	font-size: 26px;
+	font-weight:100;
+    text-align:center;
+
+    opacity:0;
+    bottom:0%;
+  /*   -webkit-transition:bottom 1.3s, opacity 1s;
+    transition:bottom 1.3s, opacity 1s; */ /* Caption 1 animation */
+}
+
+/*The cap1 of the current slide */
+#ninja-slider li[class*='-'] .cap1 {
+    opacity:1;
+    bottom:0%;
+}
+/*
+#ninja-slider li .cap2 {
+    color:rgba(255, 162, 0, 0.5);
+    font-size:23px;
+    bottom:15%;
+   /*  -webkit-transition-delay: 1s;
+    transition-delay: 1s;*/ /* Caption 2 animation */
+}
+
+/*The cap2 of the current slide 
+#ninja-slider li[class*='-s'] .cap2 {
+    bottom:10%;
+}
+
+
+/* ---------Arrow buttons ------- */   
+/* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */ 
+#ninja-slider-pause-play { display:none;}  
+
+#ninja-slider-prev, #ninja-slider-next
+{
+    position: absolute;
+    display:inline-block;
+    width:42px;
+    height:56px;
+    line-height:56px;
+    top: 50%;
+    margin-top:-51px;/*pager's height should also be counted*/
+    background-color:rgba(0,0,0,0.4);
+    background-color:#ccc\9;/*IE8 hack*/
+    backface-visibility:hidden;
+    color:white;
+    overflow:hidden;
+    white-space:nowrap;
+    -webkit-user-select: none;
+    user-select:none;
+    border-radius:2px;
+    z-index:10;
+    opacity:0.3; 
+    font-family:sans-serif;   
+    font-size:13px;
+    cursor:pointer;
+    -webkit-transition:all 0.7s;
+    transition:all 0.7s;
+}
+
+.slider-inner:hover #ninja-slider-prev, .slider-inner:hover #ninja-slider-next {
+    opacity:1;
+}
+
+
+#ninja-slider-prev {
+    left: 0px; /*set it with a positive value if .slider-inner does not have max-width setting.*/
+}
+#ninja-slider-next {
+    right: 0px;
+}
+
+/* arrows */
+#ninja-slider-prev::before, #ninja-slider-next::before {
+    position: absolute;
+    top: 17px;
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    backface-visibility:hidden;
+}
+
+#ninja-slider-prev::before {
+    -ms-transform:rotate(-45deg);/*IE 9*/
+    -webkit-transform:rotate(-45deg);
+    transform: rotate(-45deg);
+    right:4px;
+}
+
+#ninja-slider-next::before {
+    -ms-transform:rotate(135deg);/*IE 9*/
+    -webkit-transform:rotate(135deg);
+    transform: rotate(135deg);
+    left:4px;
+}
+
+
+/*pagination num within the arrow buttons*/
+#ninja-slider-prev div, #ninja-slider-next div {display:none;}
+
+
+
+   /* Computer Slider End */
+   
+   
+   /* Mobile Slider Begin*/
+/*Responsive settings*/
+@media only screen and (max-width:1024px){
+	 
+	 .pastInterns {
+	  padding: 0;
+	  margin: 0;
+	  
+	  width: 100%;
+   overflow: hidden;
+    height:  auto;
+	}
+	
+	#ninja-slider .slider-inner {
+		width: 100%;
+		height: 100%;
+	}
+	
+	#ninja-slider li {
+		width: 100%;
+		height : 100%;
+	}
+	
+}
+
+@media only screen and (max-width:960px){
+ 
+    #ninja-slider li .cap1 {
+        font-size:20px;
+    }
+	
+	#ninja-slider , .pastInterns {
+	  padding: 0;
+	  margin: 0;
+	  
+	  width: 100%;
+ 
+    height: 500px;
+	}
+	
+	.pastInterns{
+		height: auto;
+	 
+	}
+	
+	.pastInterns .pastInternstxt{
+		margin-left: -120px;
+	}
+	
+ 
+	#ninja-slider {
+     
+    
+    margin:0;
+   
+    box-sizing:border-box;
+  }
+  
+  #ninja-slider li .cap1 {
+ 
+	font-size: 18px;
+	 
+}
+
+}
+
+@media only screen and (max-width:800px){
+		#ninja-slider  {
+   overflow: hidden;
+    height: 400px;
+	}
+	
+	  #ninja-slider li .cap1 {
+ 
+	font-size: 14px;
+	 
+}
+ 
+}
+
+
+@media only screen and (max-width:600px){
+		#ninja-slider {
+ 
+    height: 300px;
+	}
+	
+	  #ninja-slider-prev, #ninja-slider-next, #ninja-slider-pager {
+        display:none;
+    }
+	 
+}
+
+@media only screen and (max-width:500px){
+		#ninja-slider {
+    height: 280px;
+	}
+	
+	 
+}
+
+ @media only screen and (max-width:400px){
+		#ninja-slider {
+	 
+    height: 220px;
+	}
+	
+	 
+}
+
+ 
+ 
+ 
+/* Mobile Slider End */

@@ -1,0 +1,75 @@
+  /** InvenTeams Css **/
+
+  @font-face
+{
+    font-family:"Myraid";
+	src: url("fonts/MyraidPro.ttf") format("truetype");
+
+}
+
+ @font-face
+{
+    font-family:"SegoeUI";
+	src: url("fonts/SegoeUI.ttf") format("truetype");
+
+}
+
+.InvenTeamsInfo {
+	width: 95%;
+	background: #fafafa;
+	overflow: hidden;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.InvenTeamsInfo .InvenTeamImg{
+	margin-left: auto;
+	margin-right: auto;
+	width:  90%;
+ padding: 20px 20px;
+  
+}
+
+.InvenTeamsInfo .InvenTeamImg img{
+	margin-left: auto;
+	margin-right: auto;
+
+	 background-color: rgba(242,242,242,0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, .1);
+	 width: 30%;
+}
+
+ .InvenTeams_IA{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ .InvenTeamsInfo .InvenTeams_IA p{
+	font-family: SegoeUI ;
+	font-size: 17px;
+		line-height: 25px;
+}
+
+
+@media only screen and (max-width:1024px) {
+	.InvenTeamsInfo .InvenTeamImg{
+	 margin-left: 30px;
+	 width: 95%;
+}
+
+
+	    .InvenTeamsInfo .InvenTeamImg img{
+	 width: 45%;
+}
+
+}
+
+@media only screen and (max-width:700px) {
+     .InvenTeamsInfo {
+		  width: 800px;
+		  margin-left: auto;
+		  margin-right: auto;
+	 }
+}
